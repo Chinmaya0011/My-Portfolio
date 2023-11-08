@@ -1,0 +1,665 @@
+
+
+/* Reference Bootstrap menu using the IDs you added */
+#bootstrap-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#navbar-brand {
+    color: #5c5050;
+    padding-left: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    transition: color 0.3s; /* Add a color transition on hover */
+}
+
+#navbar-brand:hover {
+    color: #ffbf35; /* Change the text color on hover */
+}
+
+#navbar-nav {
+    float: right;
+}
+
+
+
+
+/* Styles for .container1 */
+.container1 {
+    height: 75vh;
+    background-color: #ffffff; /* Set a background color for the container */
+    background-image: url('bg-img.png');
+    background-size: full;
+    background-repeat: no-repeat;
+	background-position: right ;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+}
+
+/* Styles for .width-50 */
+.width-50 {
+	margin-left: 30px;
+    width: 50%;
+    padding: 10px; /* Add some padding for spacing */
+    background: none; /* Remove the background image from .width-50 */
+}
+
+/* Rest of your existing styles for .banner-section */
+/* ... */
+
+.banner-section .span-col {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.banner-section h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+banner-section h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Styles for job roles */
+.banner-section .job.designer {
+    color: green;
+    font-size: 20px;
+}
+
+.banner-section .job.developer {
+    color: red;
+    font-size: 20px;
+}
+
+/* Styles for links */
+.banner-section a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Add hover effect for links */
+.banner-section a:hover {
+    color: #0077b5;
+}
+
+/* Styles for screens smaller than 768px (typical tablet devices) */
+@media (max-width: 768px) {
+	.container1 {
+		height: 55vh;
+		background-color: #ffffff; /* Set a background color for the container */
+		background-image: url('bg-img.png');
+		background-size: 250px 300px;
+		background-repeat: no-repeat;
+		background-position: right ;
+		display: flex;
+		align-items: center; 
+		padding-bottom: 0px;
+		padding-top: 0px;/* Vertically center the content */
+	}
+    .width-50 {
+        width: 90%;
+    }
+
+    .banner-section {
+    /* Adjust padding for better spacing on smaller screens */
+        background-position: center; /* Center the background image on smaller screens */
+        background-size: 150px 150px; /* Adjust background size for smaller screens */
+    }
+
+    /* Modify other styles as needed for tablet-sized screens */
+    .banner-section .span-col {
+        font-size: 20px;
+    }
+
+    .banner-section h1 {
+        font-size: 28px;
+    }
+
+    .banner-section h2 {
+        font-size: 16px;
+    }
+
+    .banner-section .job.designer,
+    .banner-section .job.developer {
+        font-size: 18px;
+    }
+}
+
+/* Styles for screens smaller than 480px (typical mobile devices) */
+@media (max-width: 480px) {
+	.container1 {
+		height: 47vh;
+		background-color: #ffffff; /* Set a background color for the container */
+		background-image: url('bg-img.png');
+		background-size: 250px 350px;
+		background-repeat: no-repeat;
+		background-position: right ;
+		display: flex;
+		align-items: center; 
+		padding-bottom: 0px;
+		padding-top: 0px;/* Vertically center the content */
+	}
+    .banner-section .span-col {
+        font-size: 18px;
+    }
+
+    .banner-section h1 {
+        font-size: 24px;
+        margin-top: 100px;
+    }
+
+    .banner-section h2 {
+        font-size: 14px;
+    }
+
+    .banner-section .job.designer,
+    .banner-section .job.developer {
+        font-size: 16px;
+    }
+
+    /* Modify other styles as needed for small mobile screens */
+    .banner-section a {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+}
+
+
+
+/* Styles for the main section */
+
+
+
+/* Default styles for larger screens */
+.container2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+	
+}
+
+.about-info {
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 48%; /* Adjust as needed */
+    padding: 20px;
+    background-color: #ffffff00; /* Set the background color for the left part */
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); /* Add a shadow if desired */
+    margin-right: 2%; /* Adjust the spacing between the left and right parts */
+    color: #3d90bd;
+}
+
+.contact-info {
+    width: 48%; /* Adjust as needed */
+    background-color: #cec0c03f; /* Set the background color for the right part */
+    padding: 20px;
+    color: #644545;
+    border-radius: 20px;
+}
+
+/* Media query for screens smaller than 768px (typical tablet devices) */
+@media (max-width: 768px) {
+    .container2 {
+        flex-direction: column; /* Stack the elements vertically */
+    }
+
+    .about-info,
+    .contact-info {
+        width: 100%; /* Full width for both sections on smaller screens */
+        margin-right: 0; /* Remove the right margin */
+    }
+}
+
+/* Media query for screens smaller than 480px (typical mobile devices) */
+@media (max-width: 480px) {
+    .about-info,
+    .contact-info {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .contact-info {
+        border-radius: 20px; /* Remove border-radius for contact-info on smaller screens */
+    }
+}
+
+/* Rest of your existing styles... */
+
+
+/* Skill Grid Styles */
+/* Skill Grid Styles */
+.skill-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.skill {
+    flex: 1; /* Distribute skills equally within the row */
+    width: calc(33.33% - 20px); /* Set the width for 3 skills in a row */
+    margin: 10px; /* Add some margin between skills */
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s; /* Add a transition for the transform property */
+}
+
+.skill:hover {
+    transform: rotate(10deg);
+    color: red; /* Rotate the skill on hover */
+}
+
+.progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.progress-bar div[role="progressbar"] {
+    color: #ffbf35;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    --pgPercentage: var(--value);
+    background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+        conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
+}
+
+
+span {
+    color: rgb(140, 198, 171);
+    margin-top: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .skill-grid {
+        flex-wrap: wrap; /* Allow skills to wrap to the next row */
+    }
+
+    .skill {
+        flex: 1; /* Distribute skills equally within the row */
+        width: calc(33.33% - 20px); /* Set the width for 3 skills in a row */
+        margin: 10px; /* Add some margin between skills */
+    }
+}
+
+/*****EXPERIENCE SECTION*****/
+.edu-exp {
+    padding: 10px 0px;
+    width: 48%;
+    margin: 1%;
+    float: left;
+    padding-left: 10px;
+    background-color: #fffdfd; /* Set the background color for the left part */
+    border-radius: 10px; /* Add border radius */
+}
+
+.experience-list {
+    width: 100%;
+    float: left;
+    padding: 30px 10px;
+    background-color: #2d2929;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition properties */
+}
+
+.experience-list:hover {
+    background-color: #a498981a; /* Change the background color to white on hover */
+    transform: translateY(-2px); /* Move the element 2 pixels up on hover */
+    transform: scale(1.1);
+}
+
+
+.experience-content {
+    width: 100%;
+    float: left;
+    margin-left: 10px;
+}
+
+.experience-content h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #64c5bf; /* Change the text color */
+}
+
+.experience-content h3 {
+    color: #25c173;
+    font-weight: 500;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+.experience-content p {
+    font-size: 15px;
+    color: #97b1b9; /* Change the text color */
+}
+
+
+/*SERVICE SECTION*/
+.service-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+}
+
+.service-item {
+    text-align: center;
+    width: calc(33.33% - 10px); /* 3 services in a row for mobile devices with a gap */
+    padding: 10px; /* Reduce padding for better spacing on smaller screens */
+    margin-top: 10px; /* Reduce top margin on smaller screens */
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-item:hover {
+	font-size:larger;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: scale(1.05); /* Zoom-in effect on hover */
+    background-color: #262626; /* Change the background color on hover */
+    color: #7193bb; /* Change the text color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
+
+.service-item i {
+	margin-top: 50px;
+    font-size: 30px; /* Reduce the icon size for smaller screens */
+    color: #ffbf35;
+    margin-bottom: 5px; /* Reduce space between icon and text on smaller screens */
+}
+
+.service-item h3 {
+    font-size: 20px; /* Reduce the heading size for smaller screens */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 5px; /* Adjust bottom margin */
+    color: #ffbf35;
+    text-align: center;
+}
+
+.service-item p {
+    font-size: 14px; /* Reduce the paragraph font size for smaller screens */
+    line-height: 18px; /* Adjust line height for better readability on smaller screens */
+    text-align: center;
+}
+
+/* Clear margin for the last service in each row */
+.service-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* Remove margin for the last service on mobile screens */
+@media (max-width: 480px) {
+    .service-item {
+        width: 100%; /* Full width for mobile screens, 1 service per row */
+        margin-right: 0; /* Remove margin for mobile screens */
+    }
+}
+
+
+
+/* Contact Us Section */
+.main-section.contact {
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px 0; /* Reduce the padding to adjust the gap */
+}
+
+/* Heading Text */
+.heading-text {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Email Input */
+input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+/* CSS for the Form Submitted Message */
+.submitted-message {
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    color: green;
+    animation: vibrate 0.3s linear infinite, rotate 2s linear infinite;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(2px);
+    }
+    50% {
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* Input Fields */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* Base styles */
+#adress {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto; /* Center the content */
+    margin-top: 20px; /* Add margin to create a gap between sections */
+}
+
+.width-33 {
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Default font sizes for various elements within the structure */
+#adress h3 {
+    font-size: 24px; /* Adjust the size as needed for h3 */
+}
+
+#adress h4 {
+    font-size: 20px; /* Adjust the size as needed for h4 */
+}
+
+#adress p {
+    font-size: 16px; /* Adjust the size as needed for p */
+}
+
+/* You can add more specific selectors for other elements within the structure */
+#adress i {
+    font-size: 18px; /* Adjust the size as needed for the <i> element */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    #adress {
+       margin: 0 auto;
+        width: 90%; /* Make the container full width on smaller screens */
+    }
+
+    .width-33 {
+        width: 30%; /* Full width for elements on smaller screens */
+        margin-bottom: 0px; /* Add some spacing between elements */
+    }
+
+    /* Adjust font sizes for smaller screens if necessary */
+    #adress h3 {
+        font-size: 20px;
+    }
+
+    #adress h4 {
+        font-size: 18px;
+    }
+
+    #adress p {
+        font-size: 10px;
+    }
+
+    /* You can adjust font sizes for other elements here as needed */
+}
+
+/* Center-align the text in the footer-sect and apply styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+/* CSS for project section */
+#project {
+    width: 90%;
+    margin: 0 auto; /* Center the section */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background-color: #6445451e;
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add transition for transform and box-shadow */
+  }
+  
+  .project:hover {
+    transform: scale(1.05); /* Hover effect - slightly scale up */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* Add a subtle 2px box shadow on hover */
+  }
+  
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    background-origin: 20px;
+    border-radius: 20px;
+  }
+  
+  .project h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #c06363;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    color: #0077b5;
+
+  }
+  /* CSS for project buttons */
+
+  
+  .project button {
+    border-radius: 10px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    width: 100px; /* Fixed width for all buttons */
+    height: 40px; /* Fixed height for all buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .project button:hover {
+    background-color: #4ed352; /* Darker shade on hover */
+  }
+  
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .project {
+      width: 30%; /* Two projects per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project {
+      width: 100%; /* One project per row on mobile screens */
+    }
+  }
+  
